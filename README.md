@@ -1,11 +1,9 @@
-<p align="center"><img src="docs/media/header.png" alt="Open Wallet. Your cards. Your passes. On your phone. Android app screens showing Add to Wallet and review of a recognised display-only card." width="100%"></p>
+<p align="center"><img src="docs/media/1-header-tickets.png" alt="Open Wallet. Your cards. Your passes. On your phone. Android app screens showing Add to Wallet and a demo movie ticket." width="100%"></p>
 
 <p align="center"><strong>A local-first Android wallet for cards, passes and personal documents.</strong></p>
 <p align="center">Kotlin · Jetpack Compose · Android 8.0+ · MIT</p>
 
 Keep display copies of payment cards, tickets, loyalty cards and personal documents together. Scan a card, import an image or PDF, or add the details yourself. No app account is required.
-
-**This is not a contactless payment app.** Bank cards are display copies. Open Wallet cannot pay at a terminal, replace official digital IDs, or issue valid tickets.
 
 ## At a glance
 
@@ -18,12 +16,12 @@ Keep display copies of payment cards, tickets, loyalty cards and personal docume
 <tr>
 <td width="33%"><img src="docs/media/01-add.png" alt="Add to Wallet screen with camera, barcode, image, PDF and calendar import options."></td>
 <td width="33%"><img src="docs/media/05-card-from-image.png" alt="A synthetic test-card image recognised as a display-only card, with a review warning."></td>
-<td width="33%"><img src="docs/media/06-payments-nfc.png" alt="Payments and NFC screen explaining that contactless bank payments are unavailable."></td>
+<td width="33%"><img src="docs/media/2-demo-movie-ticket.png" alt="Sample movie ticket displayed in Open Wallet. Demo data, not valid for entry."></td>
 </tr>
-<tr><td align="center">Add your way</td><td align="center">Review recognised details</td><td align="center">Clear capability limits</td></tr>
+<tr><td align="center">Add your way</td><td align="center">Review recognised details</td><td align="center">Your tickets, together</td></tr>
 </table>
 
-Screenshots supplied with the project, captured on an emulator. The card example uses synthetic test data.
+App screenshots supplied with the project, captured on an emulator. Card and ticket details are demo data. The sample ticket is not valid for entry.
 
 ## Install
 
@@ -49,16 +47,11 @@ On Windows, use `gradlew.bat`. Build the Play bundle separately with `./gradlew 
 
 The existing build uses a private upload key when configured, otherwise a debug key. A locally built APK is not necessarily signed for updating an existing install. Never commit signing keys or signing passwords.
 
-## What is and isn't verified
+## Notes
 
-The project includes unit tests and prior Android 15 emulator test notes. Those notes are historical, not a new test run or security audit. Physical-phone scanning, NFC hardware behaviour and end-to-end Google Calendar authorization still need validation.
+Cards are display copies, not contactless payment credentials. Documents are personal copies, and saved tickets do not establish validity with an operator. The project includes historical emulator notes and unit tests; this repository preparation is not a new device test or security audit.
 
-- Contactless bank payments need issuer and payment-provider integration, approval and certification. None is configured.
-- NFC tag reading and the developer test credential are not bank-card cloning or general door/transit compatibility.
-- Stored documents are personal copies, not government-issued mobile credentials.
-- No live ticket validity, balance updates or operator integration is promised.
-
-See [capability details](android/docs/CAPABILITIES.md), [NFC and payments](android/docs/NFC_PAYMENTS.md), [Calendar setup](android/docs/GOOGLE_CALENDAR_SETUP.md) and the [privacy policy](android/docs/PRIVACY_POLICY.md).
+See [capability details](android/docs/CAPABILITIES.md), [Calendar setup](android/docs/GOOGLE_CALENDAR_SETUP.md) and the [privacy policy](android/docs/PRIVACY_POLICY.md).
 
 ## Project map
 

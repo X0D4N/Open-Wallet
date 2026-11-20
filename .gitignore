@@ -1,0 +1,47 @@
+# Dependencies and generated output
+node_modules/
+.gradle/
+**/build/
+release/
+android/dist/
+
+# Private signing and local configuration
+**/keystore/
+**/keystore.properties
+**/local.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+.env
+.env.*
+!.env.example
+
+# Personal app data and credentials
+wallet.json
+calendar.token
+vault/
+originals/
+*.db
+*.db-shm
+*.db-wal
+
+# Development-session artifacts
+agent-session.jsonl
+build-activity.log
+craft.json
+feed.json
+usage.json
+capture/
+inbox/
+investigation.cany/
+pinned/
+
+# Editors and temporary output
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+preview.html

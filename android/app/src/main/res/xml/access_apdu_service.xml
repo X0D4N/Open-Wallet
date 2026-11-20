@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Proprietary test AID only ("F0" range = unregistered). Real access, transit or payment AIDs are
+     added only when an operator or issuer assigns them and authorises Open Wallet. -->
+<host-apdu-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/hce_description"
+    android:requireDeviceUnlock="true">
+    <aid-group android:category="other" android:description="@string/hce_description">
+        <aid-filter android:name="F04F50454E57414C4C4554" />
+    </aid-group>
+</host-apdu-service>

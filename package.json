@@ -1,0 +1,24 @@
+{
+  "name": "open-wallet",
+  "productName": "Open Wallet",
+  "version": "1.1.0",
+  "description": "A local-first wallet for payment-card display copies, passes, tickets, loyalty and gift cards, plus an encrypted personal document vault. Independent open-source project; not affiliated with Google.",
+  "main": "main.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "postinstall": "node scripts/ensure-electron.js",
+    "build": "node scripts/ensure-electron.js && node scripts/check.js",
+    "test": "node --test test/core.test.js test/engines.test.js",
+    "e2e": "node scripts/e2e.js",
+    "package": "node scripts/package.js",
+    "start": "electron .",
+    "screenshot": "electron . --screenshot shots/now.png"
+  },
+  "devDependencies": {
+    "electron": "39.8.10"
+  },
+  "allowScripts": {
+    "electron@39.8.10": true
+  }
+}

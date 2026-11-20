@@ -31,7 +31,13 @@ Version **2.1.0** is the current version in the Android source.
 
 The phone APK is named `OpenWallet-2.1.0.apk` and targets **64-bit ARM** devices. Android 8.0 or newer is required. Install APKs only from a source you trust, and back up your data before updating.
 
-The APK release asset and its SHA-256 checksum will be added after the supplied binary is inspected. No APK has been verified as part of this repository preparation yet.
+The supplied APK has passed ZIP integrity and APK v2 signature checks. Upload to GitHub Releases is still pending; there is no published APK download here yet. This is not an installation or device test.
+
+SHA-256 of the supplied `OpenWallet-2.1.0.apk`:
+
+```text
+0734a08563a81f99008efc3801be6b7ede9a2570a3d39cf4203fe5979c95bb31
+```
 
 ## Build from source
 
